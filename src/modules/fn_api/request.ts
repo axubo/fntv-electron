@@ -159,6 +159,7 @@ export async function request<T = any>(
             }
 
             // 不是json直接返回二进制文件
+            // @ts-ignore
             if (response.headers['content-type'] && !response.headers['content-type'].includes('application/json')) {
                 return {
                     success: true,

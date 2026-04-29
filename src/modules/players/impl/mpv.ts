@@ -33,8 +33,8 @@ export class MpvPlayer extends BasePlayer {
             const videoUrl = currentItem.playLink;
             log.info(`准备调用 PotPlayer 播放地址: ${videoUrl}`);
 
-            // ⚠️ 你的电脑上 PotPlayer 的默认安装路径
-            const potPlayerPath = 'C:\\Program Files\\DAUM\\PotPlayer\\PotPlayer64.exe';
+            // ✅ 这里已经换成了你截图里准确的安装路径（双斜杠转义）
+            const potPlayerPath = 'D:\\Program Files\\Potplayer\\PotPlayerMini64.exe';
 
             // 启动参数，这里传入视频链接并默认全屏
             const potArgs = [videoUrl, '/fullscreen'];
